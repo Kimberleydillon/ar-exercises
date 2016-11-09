@@ -9,4 +9,8 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
+store_name = gets.chomp
+Store.create(name: "", annual_revenue: 224000, mens_apparel: false, womens_apparel: true)
+Store.errors.details[:name]
+
 # Your code goes here ...
